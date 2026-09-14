@@ -4,7 +4,7 @@ A grandMA2 Lua plugin that batch-creates executors and timecode
 objects from a CSV list of names — instead of running a manual
 "create item" plugin by hand once per item.
 
-Built originally for a dance recital running 40+ numbers on a physical
+Built originally for a dance showcase running 40+ sequences on a physical
 grandMA2 console, where each number needed its own executor, cue, and
 timecode object with matching setup/teardown macros. Doing that by
 hand for dozens of items is slow and error-prone; this script does it
