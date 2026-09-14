@@ -137,13 +137,18 @@ and leave everything else as-is.
 ## Known limitations
 
 - The timecode offset behavior (`/Offset=`) has not been fully
-  verified against every console firmware version — check it against
-  a small test run before relying on it for a full show.
+  verified against every console firmware version, where normalizing all
+  timecode to start at 1 hour is best practice. 
 - Executor button mapping (Select / ToZero / ToFull) is hardcoded to
   match one show's convention — adjust the `Assign Select/ToZero/ToFull
   ExecButton...` lines if your show uses different key behavior.
 - Macros 3/4 must exist beforehand; the script doesn't create or
-  verify them.
+  verify them. These macros respectively set the sequence to timecode slot 1
+  to run at cue 0.1, and to reset timecode. Feel free to renumber or implement
+  into the script as well.
+- This script is specific to a gma2 console, where there are only 15 physical
+  faders; if adopting for a different console, make sure to change the value of
+  execsPerPage
 
 ## Troubleshooting
 
